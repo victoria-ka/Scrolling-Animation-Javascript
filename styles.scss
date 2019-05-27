@@ -1,0 +1,65 @@
+/*Container for all images*/
+body {
+    background-image: url('/img/matthew-henry-15558-unsplash.jpg');
+}
+.container {
+    /*2 column grid*/
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0 10%;
+    justify-items: end;
+
+    /*Fixed position so it won't be affected by default scroll
+    It will be moved using "transform" to acheive a custom scroll*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+/*Styles for image elements: Positioning and Background styles mainly*/
+.image {
+    position: relative;
+    width: 300px;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    /*This will align all images to the left
+    For getting centered position images with respect to the viewport*/
+    &:nth-child(2n) {
+        justify-self: start;
+    }
+
+    /*Set each background image using a scss for loop*/
+    @for $i from 1 through 10 {
+        %nth-child(#{$i}) {
+            background-image: url('/img/image#{$i}.jpg');
+        }
+    }
+}
+
+/*Adjusting layout for small screens*/
+@media screen and (max-width: 760px) {
+
+    .container {
+        /*1 column grid*/
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    /*Fix image centering*/
+    .image:nth-child(2n) {
+        justify-self: center;
+    }
+}
+
+/*The styles for a `div` element (inserted with Javascript)
+ Used to make the page scrollable
+Will be setted a proper `height` value using Javascript*/
+
+.fake-scroll {
+    position: absolute;
+    top: 0;
+    width: 1px;
+}
