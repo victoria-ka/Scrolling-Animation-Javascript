@@ -180,4 +180,4 @@ function updateAnimationImages() {
 window.addEventListener('resize', setUpAnimation());
 
 // Initial setup
-setupAnimation();
+setUpAnimation();
