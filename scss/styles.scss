@@ -4,9 +4,9 @@ body {
     background-repeat: no-repeat;
 }
 
-h1 {
-    font-family: 'Courier New', Courier, monospace;
-}
+.testing {
+    width: percentage(5/7);
+  }
 
 .container {
     /*2 column grid*/
