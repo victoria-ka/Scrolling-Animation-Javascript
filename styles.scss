@@ -40,7 +40,7 @@ body {
     /*Set each background image using a scss for loop*/
     @for $i from 1 through 10 {
         &:nth-child(#{$i}) {
-            background-image: url('/img/image#{$i}.jpg');
+            background-image: url('./img/image#{$i}.jpg');
         }
     }
 }
