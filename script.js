@@ -177,7 +177,7 @@ function updateAnimationImages() {
 }
 
 // Listen for `resize` event to recalculate dimmensions
-window.addEventListener('resize', setupAnimation);
+window.addEventListener('resize', setupAnimation());
 
 // Initial setup
 setupAnimation();
