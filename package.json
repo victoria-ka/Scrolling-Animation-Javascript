@@ -1,7 +1,25 @@
 {
-  "name": "",
-  "version": "",
+  "name": "Scrolling Animation",
+  "version": "0.0.1",
+  "description": "Scroll based javascript animation with images",
+  "main": "js/script.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/victoria-ka/Scrolling-Animation-Javascript"
+  },
+  "keywords": [
+    "javascript",
+    "animation",
+    "scroll"
+  ],
+  "author": "victoria-ka",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/victoria-ka/scroll-based-animation/issues"
+  },
+  "homepage": "https://github.com/victoria-ka/scroll-based-animation",
   "devDependencies": {
-    "gulp": "^4.0.2"
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2"
   }
 }
