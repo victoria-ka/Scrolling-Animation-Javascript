@@ -3,6 +3,11 @@ body {
     background-image: url('./img/matthew-henry-15558-unsplash.jpg');
     background-repeat: no-repeat;
 }
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+}
+
 .container {
     /*2 column grid*/
     display: grid;
